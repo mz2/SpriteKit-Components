@@ -30,10 +30,11 @@
 #import "SKComponentNode.h"
 #import "SKComponentScene.h"
 
+#ifdef __IPHONE_OS_VERSION_MIN_REQUIRED
 @implementation SKCTouchState
 
 @end
-
+#endif
 
 @interface SKComponentNode() {
     NSMutableOrderedSet *componentKeys;
@@ -53,7 +54,9 @@
         self.dragThreshold = 4;
         self.longPressTime = 1;
         
+#ifdef __IPHONE_OS_VERSION_MIN_REQUIRED
         self.touchState = [SKCTouchState new];
+#endif
     }
     return self;
 }
@@ -85,7 +88,7 @@
 }
 
 - (void)removeComponent:(id<SKComponent>)component{
-    int index = [components indexOfObject:component];
+    NSUInteger index = [components indexOfObject:component];
     [self _removeComponentWithKey:[componentKeys objectAtIndex:index]];
 }
 
@@ -98,7 +101,7 @@
 }
 
 - (void)_removeComponentWithKey:(id)key {
-    int index = [componentKeys indexOfObject:key];
+    NSUInteger index = [componentKeys indexOfObject:key];
     if (index == NSNotFound) {
         return;
     }
@@ -109,7 +112,7 @@
 
 
 - (id<SKComponent>)getComponentWithName:(NSString*)name {
-    int index = [componentKeys indexOfObject:name];
+    NSUInteger index = [componentKeys indexOfObject:name];
     if (index == NSNotFound) {
         return nil;
     }
@@ -117,7 +120,7 @@
 }
 
 - (id<SKComponent>)getComponent:(Class)componentClass {
-    int index = [componentKeys indexOfObject:componentClass];
+    NSUInteger index = [componentKeys indexOfObject:componentClass];
     if (index == NSNotFound) {
         return nil;
     }
@@ -190,7 +193,10 @@ void skc_applyOnExit(SKNode* node) {
     }
 }
 
-- (void)update:(CFTimeInterval)dt {
+- (void)update:(CFTimeInterval)dt
+{
+#ifdef __IPHONE_OS_VERSION_MIN_REQUIRED
+
     if (isFingerDown) {
         _touchState.touchTime += dt;
         if (!_touchState.isLongPress && !_touchState.isDragging && _touchState.touchTime > self.longPressTime) {
@@ -200,6 +206,7 @@ void skc_applyOnExit(SKNode* node) {
             }            
         }
     }
+#endif
 }
 
 
@@ -247,6 +254,9 @@ void skc_applyOnExit(SKNode* node) {
         child.alpha = alpha;
     }
 }
+
+
+#ifdef __IPHONE_OS_VERSION_MIN_REQUIRED
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     for (id<SKComponent> component in components) {
@@ -389,5 +399,7 @@ void skc_applyOnExit(SKNode* node) {
         }
     }
 }
+
+#endif
 
 @end

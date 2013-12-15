@@ -32,6 +32,7 @@
 
 #import "SKHelper.h"
 #import "SKComponentScene.h"
+#import "SKComponentNode.h"
 #import "SKCNodeIsComponent.h"
 
 

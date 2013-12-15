@@ -36,7 +36,9 @@ void skc_applyOnEnter(SKNode* node);
 void skc_applyOnExit(SKNode* node);
 
 
-SK_EXPORT @interface SKCTouchState : NSObject
+#ifdef __IPHONE_OS_VERSION_MIN_REQUIRED
+
+@interface SKCTouchState : NSObject
 
 @property (nonatomic, weak) UITouch *touch;
 @property (nonatomic) CGPoint absoluteTouchStart;
@@ -50,9 +52,10 @@ SK_EXPORT @interface SKCTouchState : NSObject
 
 @end
 
+#endif
 
 
-SK_EXPORT @interface SKComponentNode : SKNode {
+@interface SKComponentNode : SKNode {
     // workaround for SpriteKit bug #15490329
     NSHashTable *_touchSet;
 }
@@ -61,8 +64,10 @@ SK_EXPORT @interface SKComponentNode : SKNode {
 @property (nonatomic) NSMutableOrderedSet* components;
 @property (nonatomic) float dragThreshold;
 @property (nonatomic) float longPressTime;
-@property (nonatomic) SKCTouchState *touchState;
 
+#ifdef __IPHONE_OS_VERSION_MIN_REQUIRED
+@property (nonatomic) SKCTouchState *touchState;
+#endif
 
 - (BOOL)addComponent:(id<SKComponent>)component withName:(NSString*)name;
 - (BOOL)addComponent:(id<SKComponent>)component;

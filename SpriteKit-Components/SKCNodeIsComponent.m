@@ -67,6 +67,7 @@
         [(id<SKComponent>)node onSceneSizeChanged:oldSize];
 }
 
+#ifdef __IPHONE_OS_VERSION_MIN_REQUIRED
 - (void)dragStart:(SKCTouchState*)touchState {
     if (((id<SKComponent>)node).enabled && [node respondsToSelector:@selector(dragStart:)])
         [(id<SKComponent>)node dragStart:touchState];
@@ -101,7 +102,7 @@
     if (((id<SKComponent>)node).enabled && [node respondsToSelector:@selector(onSelect:)])
         [(id<SKComponent>)node onSelect:touchState];
 }
-
+#endif
 // SKComponentNodes can already override touchBegan/Moved/Ended/Cancelled, so no need to forward
 
 @end

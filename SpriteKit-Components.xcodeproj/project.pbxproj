@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FA66193185E44FE000A2F62 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD71575185E12470093AB54 /* Cocoa.framework */; };
+		5FA66199185E44FE000A2F62 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5FA66197185E44FE000A2F62 /* InfoPlist.strings */; };
+		5FA6619D185E44FE000A2F62 /* SpriteKit_Components_OSX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6619C185E44FE000A2F62 /* SpriteKit_Components_OSX.m */; };
+		5FA661A3185E44FE000A2F62 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D924215C1779E20B00CF03C8 /* XCTest.framework */; };
+		5FA661A4185E44FE000A2F62 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD71575185E12470093AB54 /* Cocoa.framework */; };
+		5FA661A7185E44FE000A2F62 /* SpriteKit-Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA66192185E44FE000A2F62 /* SpriteKit-Components.framework */; };
+		5FA661AD185E44FE000A2F62 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5FA661AB185E44FE000A2F62 /* InfoPlist.strings */; };
+		5FA661AF185E44FE000A2F62 /* SpriteKit_Components_OSXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA661AE185E44FE000A2F62 /* SpriteKit_Components_OSXTests.m */; };
+		5FA661B6185E4519000A2F62 /* SKComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = DB736202177F526600307609 /* SKComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FA661B7185E4519000A2F62 /* SKHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = DB08887E1783D752009FDAC1 /* SKHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FA661B9185E4519000A2F62 /* SKComponentNode.h in Headers */ = {isa = PBXBuildFile; fileRef = D92421751779E23900CF03C8 /* SKComponentNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FA661BA185E4519000A2F62 /* SKComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = D92421741779E23900CF03C8 /* SKComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FA661BE185E4527000A2F62 /* SKHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DB08887F1783D752009FDAC1 /* SKHelper.m */; };
+		5FA661BF185E4527000A2F62 /* SKComponentNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D92421761779E23900CF03C8 /* SKComponentNode.m */; };
+		5FA661C0185E4527000A2F62 /* SKComponentScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D92421781779E23900CF03C8 /* SKComponentScene.m */; };
+		5FA661C1185E4527000A2F62 /* SKCNodeIsComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6930AC178081F800F7DE07 /* SKCNodeIsComponent.m */; };
 		D924214F1779E20B00CF03C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D924214E1779E20B00CF03C8 /* Foundation.framework */; };
 		D924215D1779E20B00CF03C8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D924215C1779E20B00CF03C8 /* XCTest.framework */; };
 		D924215E1779E20B00CF03C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D924214E1779E20B00CF03C8 /* Foundation.framework */; };
@@ -22,6 +38,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5FA661A5185E44FE000A2F62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D92421431779E20B00CF03C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FA66191185E44FE000A2F62;
+			remoteInfo = "SpriteKit-Components-OSX";
+		};
 		D92421611779E20B00CF03C8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D92421431779E20B00CF03C8 /* Project object */;
@@ -44,6 +67,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5FA66192185E44FE000A2F62 /* SpriteKit-Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "SpriteKit-Components.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FA66196185E44FE000A2F62 /* SpriteKit-Components-OSX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpriteKit-Components-OSX-Info.plist"; sourceTree = "<group>"; };
+		5FA66198185E44FE000A2F62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5FA6619A185E44FE000A2F62 /* SpriteKit-Components-OSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpriteKit-Components-OSX-Prefix.pch"; sourceTree = "<group>"; };
+		5FA6619B185E44FE000A2F62 /* SpriteKit_Components_OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpriteKit_Components_OSX.h; sourceTree = "<group>"; };
+		5FA6619C185E44FE000A2F62 /* SpriteKit_Components_OSX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKit_Components_OSX.m; sourceTree = "<group>"; };
+		5FA661A2185E44FE000A2F62 /* SpriteKit-Components-OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SpriteKit-Components-OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FA661AA185E44FE000A2F62 /* SpriteKit-Components-OSXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpriteKit-Components-OSXTests-Info.plist"; sourceTree = "<group>"; };
+		5FA661AC185E44FE000A2F62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5FA661AE185E44FE000A2F62 /* SpriteKit_Components_OSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKit_Components_OSXTests.m; sourceTree = "<group>"; };
+		5FD71575185E12470093AB54 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		5FD71578185E12470093AB54 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5FD71579185E12470093AB54 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5FD7157A185E12470093AB54 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		D924214B1779E20B00CF03C8 /* libSpriteKit-Components.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libSpriteKit-Components.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D924214E1779E20B00CF03C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D92421521779E20B00CF03C8 /* SpriteKit-Components-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpriteKit-Components-Prefix.pch"; sourceTree = "<group>"; };
@@ -67,6 +104,24 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5FA6618E185E44FE000A2F62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA66193185E44FE000A2F62 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA6619F185E44FE000A2F62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA661A4185E44FE000A2F62 /* Cocoa.framework in Frameworks */,
+				5FA661A3185E44FE000A2F62 /* XCTest.framework in Frameworks */,
+				5FA661A7185E44FE000A2F62 /* SpriteKit-Components.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D92421481779E20B00CF03C8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -90,11 +145,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FA66194185E44FE000A2F62 /* SpriteKit-Components-OSX */ = {
+			isa = PBXGroup;
+			children = (
+				5FA6619B185E44FE000A2F62 /* SpriteKit_Components_OSX.h */,
+				5FA6619C185E44FE000A2F62 /* SpriteKit_Components_OSX.m */,
+				5FA66195185E44FE000A2F62 /* Supporting Files */,
+			);
+			path = "SpriteKit-Components-OSX";
+			sourceTree = "<group>";
+		};
+		5FA66195185E44FE000A2F62 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FA66196185E44FE000A2F62 /* SpriteKit-Components-OSX-Info.plist */,
+				5FA66197185E44FE000A2F62 /* InfoPlist.strings */,
+				5FA6619A185E44FE000A2F62 /* SpriteKit-Components-OSX-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5FA661A8185E44FE000A2F62 /* SpriteKit-Components-OSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				5FA661AE185E44FE000A2F62 /* SpriteKit_Components_OSXTests.m */,
+				5FA661A9185E44FE000A2F62 /* Supporting Files */,
+			);
+			path = "SpriteKit-Components-OSXTests";
+			sourceTree = "<group>";
+		};
+		5FA661A9185E44FE000A2F62 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FA661AA185E44FE000A2F62 /* SpriteKit-Components-OSXTests-Info.plist */,
+				5FA661AB185E44FE000A2F62 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5FD71577185E12470093AB54 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FD71578185E12470093AB54 /* Foundation.framework */,
+				5FD71579185E12470093AB54 /* CoreData.framework */,
+				5FD7157A185E12470093AB54 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
 		D92421421779E20B00CF03C8 = {
 			isa = PBXGroup;
 			children = (
 				D92421501779E20B00CF03C8 /* SpriteKit-Components */,
 				D92421641779E20B00CF03C8 /* SpriteKit-ComponentsTests */,
+				5FA66194185E44FE000A2F62 /* SpriteKit-Components-OSX */,
+				5FA661A8185E44FE000A2F62 /* SpriteKit-Components-OSXTests */,
 				D924214D1779E20B00CF03C8 /* Frameworks */,
 				D924214C1779E20B00CF03C8 /* Products */,
 			);
@@ -105,6 +210,8 @@
 			children = (
 				D924214B1779E20B00CF03C8 /* libSpriteKit-Components.a */,
 				D924215B1779E20B00CF03C8 /* SpriteKit-ComponentsTests.xctest */,
+				5FA66192185E44FE000A2F62 /* SpriteKit-Components.framework */,
+				5FA661A2185E44FE000A2F62 /* SpriteKit-Components-OSXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,6 +223,8 @@
 				D924214E1779E20B00CF03C8 /* Foundation.framework */,
 				D924215C1779E20B00CF03C8 /* XCTest.framework */,
 				D924215F1779E20B00CF03C8 /* UIKit.framework */,
+				5FD71575185E12470093AB54 /* Cocoa.framework */,
+				5FD71577185E12470093AB54 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -182,7 +291,57 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		5FA6618F185E44FE000A2F62 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA661BA185E4519000A2F62 /* SKComponent.h in Headers */,
+				5FA661B7185E4519000A2F62 /* SKHelper.h in Headers */,
+				5FA661B9185E4519000A2F62 /* SKComponentNode.h in Headers */,
+				5FA661B6185E4519000A2F62 /* SKComponents.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		5FA66191185E44FE000A2F62 /* SpriteKit-Components-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FA661B0185E44FE000A2F62 /* Build configuration list for PBXNativeTarget "SpriteKit-Components-OSX" */;
+			buildPhases = (
+				5FA6618D185E44FE000A2F62 /* Sources */,
+				5FA6618E185E44FE000A2F62 /* Frameworks */,
+				5FA6618F185E44FE000A2F62 /* Headers */,
+				5FA66190185E44FE000A2F62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpriteKit-Components-OSX";
+			productName = "SpriteKit-Components-OSX";
+			productReference = 5FA66192185E44FE000A2F62 /* SpriteKit-Components.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5FA661A1185E44FE000A2F62 /* SpriteKit-Components-OSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FA661B3185E44FE000A2F62 /* Build configuration list for PBXNativeTarget "SpriteKit-Components-OSXTests" */;
+			buildPhases = (
+				5FA6619E185E44FE000A2F62 /* Sources */,
+				5FA6619F185E44FE000A2F62 /* Frameworks */,
+				5FA661A0185E44FE000A2F62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FA661A6185E44FE000A2F62 /* PBXTargetDependency */,
+			);
+			name = "SpriteKit-Components-OSXTests";
+			productName = "SpriteKit-Components-OSXTests";
+			productReference = 5FA661A2185E44FE000A2F62 /* SpriteKit-Components-OSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D924214A1779E20B00CF03C8 /* SpriteKit-Components */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D924216E1779E20B00CF03C8 /* Build configuration list for PBXNativeTarget "SpriteKit-Components" */;
@@ -226,6 +385,14 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Andrew Eiche";
+				TargetAttributes = {
+					5FA661A1185E44FE000A2F62 = {
+						TestTargetID = 5FA66191185E44FE000A2F62;
+					};
+					D924215A1779E20B00CF03C8 = {
+						TestTargetID = 5FA66191185E44FE000A2F62;
+					};
+				};
 			};
 			buildConfigurationList = D92421461779E20B00CF03C8 /* Build configuration list for PBXProject "SpriteKit-Components" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -241,11 +408,29 @@
 			targets = (
 				D924214A1779E20B00CF03C8 /* SpriteKit-Components */,
 				D924215A1779E20B00CF03C8 /* SpriteKit-ComponentsTests */,
+				5FA66191185E44FE000A2F62 /* SpriteKit-Components-OSX */,
+				5FA661A1185E44FE000A2F62 /* SpriteKit-Components-OSXTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5FA66190185E44FE000A2F62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA66199185E44FE000A2F62 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA661A0185E44FE000A2F62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA661AD185E44FE000A2F62 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D92421591779E20B00CF03C8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -257,6 +442,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5FA6618D185E44FE000A2F62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA661C0185E4527000A2F62 /* SKComponentScene.m in Sources */,
+				5FA6619D185E44FE000A2F62 /* SpriteKit_Components_OSX.m in Sources */,
+				5FA661BF185E4527000A2F62 /* SKComponentNode.m in Sources */,
+				5FA661BE185E4527000A2F62 /* SKHelper.m in Sources */,
+				5FA661C1185E4527000A2F62 /* SKCNodeIsComponent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA6619E185E44FE000A2F62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA661AF185E44FE000A2F62 /* SpriteKit_Components_OSXTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D92421471779E20B00CF03C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -279,6 +484,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5FA661A6185E44FE000A2F62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FA66191185E44FE000A2F62 /* SpriteKit-Components-OSX */;
+			targetProxy = 5FA661A5185E44FE000A2F62 /* PBXContainerItemProxy */;
+		};
 		D92421621779E20B00CF03C8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D924214A1779E20B00CF03C8 /* SpriteKit-Components */;
@@ -287,6 +497,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5FA66197185E44FE000A2F62 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FA66198185E44FE000A2F62 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5FA661AB185E44FE000A2F62 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FA661AC185E44FE000A2F62 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		D92421671779E20B00CF03C8 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -298,6 +524,110 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5FA661B1185E44FE000A2F62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKit-Components-OSX/SpriteKit-Components-OSX-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "SpriteKit-Components-OSX/SpriteKit-Components-OSX-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "SpriteKit-Components";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		5FA661B2185E44FE000A2F62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKit-Components-OSX/SpriteKit-Components-OSX-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "SpriteKit-Components-OSX/SpriteKit-Components-OSX-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "SpriteKit-Components";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		5FA661B4185E44FE000A2F62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpriteKit-Components-OSX.framework/Versions/A/SpriteKit-Components-OSX";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKit-Components-OSX/SpriteKit-Components-OSX-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "SpriteKit-Components-OSXTests/SpriteKit-Components-OSXTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5FA661B5185E44FE000A2F62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpriteKit-Components-OSX.framework/Versions/A/SpriteKit-Components-OSX";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteKit-Components-OSX/SpriteKit-Components-OSX-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "SpriteKit-Components-OSXTests/SpriteKit-Components-OSXTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		D924216C1779E20B00CF03C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -397,6 +727,7 @@
 		D92421721779E20B00CF03C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpriteKit-Components-OSX.framework/Versions/A/SpriteKit-Components-OSX";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -410,6 +741,7 @@
 				);
 				INFOPLIST_FILE = "SpriteKit-ComponentsTests/SpriteKit-ComponentsTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -417,6 +749,7 @@
 		D92421731779E20B00CF03C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpriteKit-Components-OSX.framework/Versions/A/SpriteKit-Components-OSX";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -426,6 +759,7 @@
 				GCC_PREFIX_HEADER = "SpriteKit-Components/SpriteKit-Components-Prefix.pch";
 				INFOPLIST_FILE = "SpriteKit-ComponentsTests/SpriteKit-ComponentsTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -433,6 +767,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5FA661B0185E44FE000A2F62 /* Build configuration list for PBXNativeTarget "SpriteKit-Components-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FA661B1185E44FE000A2F62 /* Debug */,
+				5FA661B2185E44FE000A2F62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5FA661B3185E44FE000A2F62 /* Build configuration list for PBXNativeTarget "SpriteKit-Components-OSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FA661B4185E44FE000A2F62 /* Debug */,
+				5FA661B5185E44FE000A2F62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D92421461779E20B00CF03C8 /* Build configuration list for PBXProject "SpriteKit-Components" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

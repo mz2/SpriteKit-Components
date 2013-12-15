@@ -39,7 +39,10 @@
         [(component) selectorName:object]; \
     }
 
+#ifdef __IPHONE_OS_VERSION_MIN_REQUIRED
 @class SKCTouchState;
+#endif
+
 @class SKComponentNode;
 
 SK_EXPORT @protocol SKComponent <NSObject>
@@ -78,6 +81,7 @@ SK_EXPORT @protocol SKComponent <NSObject>
 - (void)didEndContact:(SKPhysicsContact *)contact;
 
 
+#ifdef __IPHONE_OS_VERSION_MIN_REQUIRED
 #pragma mark -- Touch Handlers --
 
 // all touch handlers are only triggered if the tough down is inside the node content area
@@ -116,5 +120,7 @@ SK_EXPORT @protocol SKComponent <NSObject>
 
 // standard touchesCancelled event, called prior to touchState based events
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event;
+
+#endif
 
 @end

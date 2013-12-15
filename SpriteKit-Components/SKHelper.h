@@ -30,6 +30,10 @@
 #import <Foundation/Foundation.h>
 #import <SpriteKit/SpriteKit.h>
 
+#ifndef __IPHONE_OS_VERSION_MIN_REQUIRED
+@compatibility_alias UIColor NSColor;
+#endif
+
 @interface SKShapeNode (SK_Helper)
 + (instancetype)nodeWithPathReleased:(CGPathRef)path;
 + (instancetype)nodeWithPathReleased:(CGPathRef)path withFillColor:(UIColor*)fillColor strokeColor:(UIColor*)strokeColor;
